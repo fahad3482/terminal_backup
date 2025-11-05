@@ -1,0 +1,110 @@
+Script started on 2025-11-05 22:28:40+06:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="66" LINES="25"]
+[?2004h[0;31m┌─[[0;39myematekudusai[01;33m@[01;96mparrot[0;31m]─[[0;32m~/test_terminal_backup[0;31m]
+[0;31m└──╼ [0m[01;33m$[0m#!/bin/bash
+
+# Simple Bash Calculator
+
+echo "Simple Calculator"
+echo "-----------------"
+echo "Enter first number: "
+read num1
+
+[7mecho "Enter operator (+, -, *, /): "[27m
+[7mread op[27m
+
+[7mecho "Enter second number: "[27m
+[7mread num2[27m
+
+[7mcase $op in[27m
+[7m    +) result=$(echo "$num1 + $num2" | bc);;[27m
+[7m    -) result=$(echo "$num1 - $num2" | bc);;[27m
+[7m    \*) result=$(echo "$num1 * $num2" | bc);;[27m
+[7m    /) [27m
+[7m        if [ "$num2" == "0" ]; then[27m
+[7m            echo "Error: Division by zero!"[27m
+[7m            exit 1[27m
+[7m        fi[27m
+[7m        result=$(echo "scale=2; $num1 / $num2" | bc)[27m
+[7m        ;;[27m[7m    *)[27m[7m        echo "Invalid operator!"[27m[7m        exit 1[27m[7m        ;;[27m[7mesac[27m[7mecho "Result: $result"[27m[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[Aecho "Enter operator (+, -, *, /): "
+read op
+
+echo "Enter second number: "
+read num2
+
+case $op in
+    +) result=$(echo "$num1 + $num2" | bc);;
+    -) result=$(echo "$num1 - $num2" | bc);;
+    \*) result=$(echo "$num1 * $num2" | bc);;
+    /) 
+        if [ "$num2" == "0" ]; then
+            echo "Error: Division by zero!"
+            exit 1
+        fi
+        result=$(echo "scale=2; $num1 / $num2" | bc)
+        ;;    *)        echo "Invalid operator!"        exit 1        ;;esacecho "Result: $result"
+[?2004lSimple Calculator
+-----------------
+Enter first number: 
+6
+Enter operator (+, -, *, /): 
+*
+Enter second number: 
+4
+Result: 24
+[?2004h[0;31m┌─[[0;39myematekudusai[01;33m@[01;96mparrot[0;31m]─[[0;32m~/test_terminal_backup[0;31m]
+[0;31m└──╼ [0m[01;33m$[0m#!/bin/bash
+
+# Simple Bash Calculator
+
+echo "Simple Calculator"
+echo "-----------------"
+echo "Enter first number: "
+read num1
+
+[7mecho "Enter operator (+, -, *, /): "[27m
+[7mread op[27m
+
+[7mecho "Enter second number: "[27m
+[7mread num2[27m
+
+[7mcase $op in[27m
+[7m    +) result=$(echo "$num1 + $num2" | bc);;[27m
+[7m    -) result=$(echo "$num1 - $num2" | bc);;[27m
+[7m    \*) result=$(echo "$num1 * $num2" | bc);;[27m
+[7m    /) [27m
+[7m        if [ "$num2" == "0" ]; then[27m
+[7m            echo "Error: Division by zero!"[27m
+[7m            exit 1[27m
+[7m        fi[27m
+[7m        result=$(echo "scale=2; $num1 / $num2" | bc)[27m
+[7m        ;;[27m[7m    *)[27m[7m        echo "Invalid operator!"[27m[7m        exit 1[27m[7m        ;;[27m[7mesac[27m[7mecho "Result: $result"[27m[7mnano calculator.txt[27m[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[Aecho "Enter operator (+, -, *, /): "
+read op
+
+echo "Enter second number: "
+read num2
+
+case $op in
+    +) result=$(echo "$num1 + $num2" | bc);;
+    -) result=$(echo "$num1 - $num2" | bc);;
+    \*) result=$(echo "$num1 * $num2" | bc);;
+    /) 
+        if [ "$num2" == "0" ]; then
+            echo "Error: Division by zero!"
+            exit 1
+        fi
+        result=$(echo "scale=2; $num1 / $num2" | bc)
+        ;;    *)        echo "Invalid operator!"        exit 1        ;;esacecho "Result: $result"nano calculator.txt
+[?2004lSimple Calculator
+-----------------
+Enter first number: 
+6
+Enter operator (+, -, *, /): 
+*
+Enter second number: 
+3
+Result: 18
+[?2004h[?1049h[22;0;0t[1;25r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[23;28H(B[0;7m[ New File ](B[m[H(B[0;7m  GNU nano 7.2              calculator.txt                        [1;65H(B[m[24d(B[0;7m^H(B[m Help[14G(B[0;7m^O(B[m Read File (B[0;7m^R(B[m Replace   (B[0;7m^V(B[m Paste     (B[0;7m^G(B[m Go To Line[25d(B[0;7m^X(B[m Exit[14G(B[0;7m^F(B[m Where Is  (B[0;7m^K(B[m Cut[40G(B[0;7m^T(B[m Execute   (B[0;7m^Z(B[m Undo[2d[?12l[?25h[?25l[1;57H(B[0;7mModified[23d(B[m[K[1;65H[23;5H(B[0;7m[ line 34/35 (97%), col 20/20 (100%), char 658/659 (99%) ](B[m[2;9Hfi[3dresult=$(echo "scale=2; $num1 / $num2" | bc)[4;9H;;[5;5H*)[6d  echo "Invalid operator!"[7;9Hexit 1[8;9H;;[9desac[11decho "Result: $result"[12dnano calculator.txt[?12l[?25h[?25l[23;29H(B[0;7m19/19[23;50H7/658[63G(B[m[?12l[?25h[12;19H [?25l[23;30H(B[0;7m8/18[23;50H6/657[63G(B[m[?12l[?25h[12;18H [?25l[23;30H(B[0;7m7/17[23;50H5/656[63G(B[m[?12l[?25h[12;17H [?25l[23;30H(B[0;7m6/16[23;50H4/655[63G(B[m[?12l[?25h[12;16H [?25l[23;30H(B[0;7m5/15[23;50H3/654[63G(B[m[?12l[?25h[12;15H [?25l[23;30H(B[0;7m4/14[23;50H2/653[63G(B[m[?12l[?25h[12;14H [?25l[23;30H(B[0;7m3/13[23;50H1/652[63G(B[m[?12l[?25h[12;13H [?25l[23;30H(B[0;7m2/12[23;50H0/651[63G(B[m[?12l[?25h[12;12H [?25l[23;30H(B[0;7m1/11[23;49H49/650[63G(B[m[?12l[?25h[12;11H [?25l[23;30H(B[0;7m0/10[23;50H8/649[63G(B[m[?12l[?25h[12;10H [?25l[23;29H(B[0;7m 9/ 9[23;50H7/648[63G(B[m[?12l[?25h[12;9H [?25l[23;30H(B[0;7m8/ 8[23;50H6/647[63G(B[m[?12l[?25h[12;8H [?25l[23;30H(B[0;7m7/ 7[23;50H5/646[63G(B[m[?12l[?25h[12;7H [?25l[23;30H(B[0;7m6/ 6[23;50H4/645[63G(B[m[?12l[?25h[12;6H [?25l[23;30H(B[0;7m5/ 5[23;50H3/644[63G(B[m[?12l[?25h[12;5H[?25l[23;30H(B[0;7m4/ 4[23;50H2/643[63G(B[m[?12l[?25h[12;4H [?25l[23;30H(B[0;7m3/ 3[23;50H1/642[63G(B[m[?12l[?25h[12;3H [?25l[23;30H(B[0;7m2/ 2[23;50H0/641[63G(B[m[?12l[?25h[12dn [?25l[23;30H(B[0;7m1/ 1[23;49H39/640[63G(B[m[?12l[?25h[12d[K[?25l[23;13H(B[0;7m3/34[23;29H23/23[23;50H8/639[63G(B[m[11;23H[?12l[?25h[?25l[23;13H(B[0;7m4/35[23;29H 1/ 1[23;50H9/640[63G(B[m[12d[?12l[?25h[?25l[24;14H         (B[0;7mM-F(B[m New Buffer        (B[0;7m^X(B[m Execute Command[K[25;2H(B[0;7mC(B[m Cancel             (B[0;7mM-N(B[m No Conversion     (B[0;7m^T(B[m Browse[K[23d(B[0;7mFile to insert [from ./]:                                         [23;27H(B[m[?12l[?25h[?25l[1K (B[0;7m[ Cancelled ](B[m[K[24;14H(B[0;7m^O(B[m Read File (B[0;7m^R(B[m Replace   (B[0;7m^V(B[m Paste     (B[0;7m^G(B[m Go To Line[25;2H(B[0;7mX(B[m Exit      (B[0;7m^F(B[m Where Is  (B[0;7m^K(B[m Cut       (B[0;7m^T(B[m Execute   (B[0;7m^Z(B[m Undo[?12l[?25h[12d[?25l[23d(B[0;7mSave modified buffer?                                             [24;1H Y(B[m Yes[K[25d(B[0;7m N(B[m No  [14G   (B[0;7m^C(B[m Cancel[K[23;23H[?12l[?25h[?25l[24d(B[0;7m^H(B[m Help[24;17H(B[0;7mM-D(B[m DOS Format  (B[0;7mM-A(B[m Append[49G(B[0;7mM-B(B[m Backup File[25d(B[0;7m^C(B[m Cancel[17G(B[0;7mM-M(B[m Mac Format  (B[0;7mM-P(B[m Prepend     (B[0;7m^T(B[m Browse[23d(B[0;7mFile Name to Write: calculator.txt(B[m[?12l[?25h[?25l[23;26H[1K (B[0;7m[ Writing... ](B[m[K[1;57H(B[0;7m        (B[m[23;25H(B[0;7m[ Wrote 34 lines ](B[m[J[25d[?12l[?25h[25;1H[?1049l[23;0;0t[?1l>[?2004l[?2004h[0;31m┌─[[0;39myematekudusai[01;33m@[01;96mparrot[0;31m]─[[0;32m~/test_terminal_backup[0;31m]
+[0;31m└──╼ [0m[01;33m$[0m[?2004l
+exit
+
+Script done on 2025-11-05 22:31:10+06:00 [COMMAND_EXIT_CODE="0"]
