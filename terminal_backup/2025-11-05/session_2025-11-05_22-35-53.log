@@ -1,0 +1,59 @@
+Script started on 2025-11-05 22:35:53+06:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="66" LINES="25"]
+?2004h0;31m┌─[0;39myematekudusai01;33m@01;96mparrot0;31m]─[0;32m~/test_terminal_backup0;31m]
+0;31m└──╼ 0m01;33m$0m#!/bin/bash
+
+# Simple Bash Calculator
+
+echo "Simple Calculator"
+echo "-----------------"
+echo "Enter first number: "
+read num1
+
+7mecho "Enter operator (+, -, *, /): "27m
+7mread op27m
+
+7mecho "Enter second number: "27m
+7mread num227m
+
+7mcase $op in27m
+7m    +) result=$(echo "$num1 + $num2" | bc);;27m
+7m    -) result=$(echo "$num1 - $num2" | bc);;27m
+7m    \*) result=$(echo "$num1 * $num2" | bc);;27m
+7m    /) 27m
+7m	  if [ "$num2" == "0" ]; then27m
+7m	      echo "Error: Division by zero!"27m
+7m	      exit 127m
+7m	  fi27m
+7m	  result=$(echo "scale=2; $num1 / $num2" | bc)27m
+echon"Enteruoperator2(+,A-,A*,A/):A"AAA
+read op
+
+echo "Enter second number: "
+read num2
+
+case $op in
+    +) result=$(echo "$num1 + $num2" | bc);;
+    -) result=$(echo "$num1 - $num2" | bc);;
+    \*) result=$(echo "$num1 * $num2" | bc);;
+    /)
+	if [ "$num2" == "0" ]; then
+	    echo "Error: Division by zero!"
+	    exit 1
+	fi
+	result=$(echo "scale=2; $num1 / $num2" | bc)
+nano*calculator.shult"operator!"
+Simple Calculator
+-----------------
+Enter first number:
+5
+Enter operator (+, -, *, /):
+*
+Enter second number:
+10
+Result: 50
+11d1P?25l23;13HB0;7m2/3423;50H5/63963GBm10;22r22;1H%),7charm616/640e(96%)a]Bm?12l?25hl?25h?25l?12l?25h?251KnB0;7m[mCancelledC]BmK24;14HB0;7m^OBm^ReadBFileeB0;7m^RBm0ReplaceBmaB0;7m^VBm0Paste^GBmoB0;7m^GBmeGo;ToBLine25;2HB0;7mXBm0Exitm^FBmhB0;7m^FBm0Where^IsmuB0;7m^KBm0Cut7m^TBmxB0;7m^TBm0ExecuteBmnB0;7m^ZBm2Undo?12l?25h3H?25l23;30HB0;7m2/1223;50H0/65163GBm?12l?25h12;12H?25l23;30HB0;7m1/1123;49H49/65063GBm?12l?25h12;11H?25l23;30HB0;7m0/1023;50H8/64963GBm?12l?25h12;10H?25l23;29HB0;7m 9/ 923;50H7/64863GBm?12l?25h12;9H?25l23;30HB0;7m8/ 823;50H6/64763GBm?12l?25h12;8H?25l23;30HB0;7m7/ 723;50H5/64663GBm?12l?25h12;7H?25l23;30HB0;7m6/ 623;50H4/64563GBm?12l?25h12;6H?25l23;30HB0;7m5/ 523;50H3/64463GBm?12l?25h12;5H?25l23;30HB0;7m4/ 423;50H2/64363GBm?12l?25h12;4H?25l23;30HB0;7m3/ 323;50H1/64263GBm?12l?25h12;3H?25l23;30HB0;7m2/ 223;50H0/64163GBm?12l?25h
+?1l?2004l?2004h0;31m┌─[0;39myematekudusai01;33m@01;96mparrot0;31m]─[0;32m~/test_terminal_backup0;31m];7mBm23;25HB0;7m[mWrote4330linesB]BmeaddFile4B0;7m^RBm1Replace25lB0;7m^VBm2Paste0;7m[B0;7m^GBmdGoBTo2Line25;2HB0;7mXBmaExitle B0;B0;7m^FBmpWhere Is0;B0;7m^KBmsCut	   B0;B0;7m^TBm Execute25;B0;7m^ZBmmUndo?12l?25h0;7m^FBm Where Is  B0;7m^KBm Cut       B0;7m^TBm Execute   B0;7m^ZBm Undo?12l?25h
+0;31m└──╼ 0m01;33m$0m?2004l
+exit
+
+Script done on 2025-11-05 22:38:02+06:00 [COMMAND_EXIT_CODE="0"]
